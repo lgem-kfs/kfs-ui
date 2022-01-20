@@ -1,0 +1,29 @@
+.cc-switch {
+  width: var(--w);
+  height: 30px;
+  border-radius: 30px;
+  background: var(--bg);
+  position: relative;
+  box-sizing: border-box;
+  padding: 5px;
+  cursor: pointer;
+  transition: all .3s linear;
+  &::before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: var(--left);
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s linear;
+  }
+ &-disabled {
+   background: #7f8c8d;
+   &:hover {
+     cursor: not-allowed;
+   }
+ }
+}

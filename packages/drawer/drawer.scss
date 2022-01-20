@@ -1,0 +1,55 @@
+.cc-drawer {
+  min-width: var(--w);
+  max-width: max-content;
+  min-height: 10%;
+  max-height: max-content;
+  padding: 0 15px;
+  background: var(--theme-bg-default);
+  box-sizing: border-box;
+  position: fixed;
+  top: var(--position_top);
+  left: var(--position_left);
+  right: var(--position_right);
+  bottom: var(--position_bottom);
+  animation: var(--animation_name) 0.2s linear;
+
+  &::after {
+    content: '';
+    min-height: 100vh;
+    max-height: max-content;
+    width: calc(var(--shadow) + var(--w));
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: var(--mask_top);
+    left: var(--mask_left);
+    right: var(--mask_right);
+    bottom: var(--mask_bottom);
+  }
+
+  &-box {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    max-height: max-content;
+    justify-content: center;
+    padding: 20px 0;
+    position: relative;
+    box-sizing: border-box;
+  }
+}
+
+@keyframes FadeInL{
+  0% {transform: translateX(-100%)}
+  20% {transform:translateX(-80%)}
+  60% {transform:translateX(-40%)}
+  80% {transform:translateX(-20%)}
+  100% {transform:translateX(0%)}
+}
+
+@keyframes FadeInR{
+  0% {transform: translateX(100%)}
+  20% {transform:translateX(80%)}
+  60% {transform:translateX(40%)}
+  80% {transform:translateX(20%)}
+  100% {transform:translateX(0%)}
+}

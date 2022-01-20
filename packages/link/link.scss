@@ -1,0 +1,36 @@
+.cc-link {
+  font-size: 20px;
+  opacity: 0.8;
+  letter-spacing: 0.7;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cc-link-default {
+  color: #bdc3c7;
+}
+.cc-link-primary {
+  color: var(--theme-bg-info);
+}
+.cc-link-success {
+  color: var(--theme-bg-success);
+}
+.cc-link-warning {
+  color: var(--theme-bg-warn);
+}
+.cc-link-danger {
+  color: var(--theme-bg-error);
+}
+.cc-link-info {
+  color: var(--theme-bg-info);
+}
+.cc-link-underline {
+  &:hover {
+    text-decoration: none;
+  }
+}
+.cc-link-disabled {
+  opacity: 0.4;
+  &:hover {
+    cursor: not-allowed;
+  }
+}

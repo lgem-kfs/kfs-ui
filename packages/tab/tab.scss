@@ -1,0 +1,12 @@
+.cc-tab {
+  &-title {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    margin-bottom: 15px;
+    color: var(--theme-color-default)
+  }
+  &-context {
+    position: absolute;
+  }
+}
